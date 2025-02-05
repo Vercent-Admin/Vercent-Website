@@ -11,7 +11,7 @@ export default function Home() {
         {/* Navbar */}
         <nav className="flex justify-between items-center px-10 py-6 bg-gray-900 dark:bg-gray-200 shadow-md">
           <h1 className="text-3xl font-bold text-blue-400">Vercent</h1>
-          <ul className="flex space-x-8">
+          <ul className="flex space-x-8 text-white dark:text-black">
             <li className="hover:text-blue-400 cursor-pointer">Features</li>
             <li className="hover:text-blue-400 cursor-pointer">About</li>
             <li className="hover:text-blue-400 cursor-pointer">Contact</li>
