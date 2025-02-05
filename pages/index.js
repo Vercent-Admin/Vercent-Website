@@ -9,9 +9,14 @@ export default function Home() {
     <div className={darkMode ? "dark" : ""}>
       <div className="min-h-screen bg-gradient-to-b from-blue-900 via-blue-800 to-gray-900 text-white dark:bg-gradient-to-b dark:from-gray-100 dark:to-white dark:text-black">
         {/* Navbar */}
-        <nav className="flex justify-between items-center p-6 bg-gray-900 dark:bg-gray-200">
+        <nav className="flex justify-between items-center px-10 py-6 bg-gray-900 dark:bg-gray-200 shadow-md">
           <h1 className="text-3xl font-bold text-blue-400">Vercent</h1>
-          <div className="flex items-center gap-6">
+          <ul className="flex space-x-8">
+            <li className="hover:text-blue-400 cursor-pointer">Features</li>
+            <li className="hover:text-blue-400 cursor-pointer">About</li>
+            <li className="hover:text-blue-400 cursor-pointer">Contact</li>
+          </ul>
+          <div className="flex items-center gap-4">
             <a
               href="https://www.instagram.com/vercent.ai"
               target="_blank"
@@ -30,24 +35,23 @@ export default function Home() {
         </nav>
 
         {/* Hero Section */}
-        <header className="relative w-full h-screen bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 text-center flex flex-col items-center justify-center">
+        <header className="relative w-full h-screen bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 flex items-center justify-center text-center">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-center"
           >
-            <h1 className="text-6xl font-extrabold text-white mb-4">
+            <h1 className="text-6xl font-extrabold text-white mb-6">
               Empowering Business Growth
             </h1>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-8">
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
               Automating outreach to increase conversions. Reclaim your time and focus on scaling your business.
             </p>
             <div className="flex justify-center gap-4">
-              <button className="px-6 py-3 rounded-full bg-blue-500 hover:bg-blue-600 text-white font-semibold">
+              <button className="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-full font-semibold">
                 Get Started
               </button>
-              <button className="px-6 py-3 rounded-full bg-gray-800 hover:bg-gray-700 text-white font-semibold">
+              <button className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-full font-semibold">
                 Free Sample Leads
               </button>
             </div>
@@ -56,8 +60,8 @@ export default function Home() {
 
         {/* Features Section */}
         <section className="py-16 bg-gray-900 dark:bg-gray-200">
-          <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-4xl font-bold text-center text-white dark:text-black mb-12">
+          <div className="max-w-7xl mx-auto px-6 text-center">
+            <h2 className="text-4xl font-bold text-white dark:text-black mb-12">
               What We Offer
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -88,11 +92,11 @@ export default function Home() {
         </section>
 
         {/* Call to Action Section */}
-        <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-800 text-center dark:bg-gray-300">
-          <h2 className="text-4xl font-bold text-white dark:text-black mb-4">
+        <section className="py-20 bg-gradient-to-b from-gray-800 to-gray-700 text-center dark:bg-gray-300">
+          <h2 className="text-4xl font-bold text-white dark:text-black mb-6">
             Ready to Transform Your Outreach?
           </h2>
-          <p className="text-lg text-gray-300 dark:text-gray-700 max-w-2xl mx-auto mb-8">
+          <p className="text-lg text-gray-300 dark:text-gray-700 max-w-xl mx-auto mb-8">
             Schedule a call with our team to explore solutions tailored to your business needs.
           </p>
           <a
@@ -106,7 +110,7 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="py-10 bg-gray-800 dark:bg-gray-200 text-center">
+        <footer className="py-10 bg-gray-900 dark:bg-gray-200 text-center">
           <p className="text-gray-400 dark:text-gray-600">
             &copy; 2025 Vercent. All rights reserved.
           </p>
