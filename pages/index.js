@@ -1,6 +1,14 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+const Button = ({ children, className }) => (
+  <button className={`px-6 py-3 rounded-xl ${className}`}>{children}</button>
+);
+
+const Card = ({ children, className }) => (
+  <div className={`p-6 shadow-lg rounded-xl ${className}`}>{children}</div>
+);
+
+const CardContent = ({ children }) => <div>{children}</div>;
+
 import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 
